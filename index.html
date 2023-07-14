@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giskard Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Knowledge</a></li>
+                    <li><a href="">Company</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>The open-source testing <br> framework dedicated to 
+                    machine learning models
+                </h2>
+                <h3>Scan, test and debug<br>
+                    Detect vulnerabilities<br>
+                    Centralize testing in one HUB<br>
+                    Simplify testing with pre-built functions<br>
+                    Integration with any Python model</h3>
+                <p></p>
+                <h4>Supercharge your AI development 🤖, enhance the quality <br> of your model without worrying about Hidden Biases and Errors.</h4>
+                <button type="button">Learn more
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="images/scan4.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/turtle2.png" alt="" class="turtle">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="images/gh.png" alt="" href="https://github.com/Giskard-AI/giskard">
+            <img src="images/tw.png" alt="">
+            <img src="images/ig.png" alt="">
+        </div>
+    </div>
+
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px"
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px"
+                    }
+
+            }
+
+        </script>
+    
+</body>
+</html>
